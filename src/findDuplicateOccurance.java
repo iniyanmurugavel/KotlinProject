@@ -21,8 +21,8 @@ public class findDuplicateOccurance {
             System.out.println(user.getName() +"-" + user.getAge());
         }
       //  System.out.println("duplicate List");
-//        for(User user:duplicateList){
-//            System.out.println(user.getName() +"-" + user.getAge());
+//        for(User oops.user:duplicateList){
+//            System.out.println(oops.user.getName() +"-" + oops.user.getAge());
 //        }
     }
 
@@ -34,10 +34,10 @@ public class findDuplicateOccurance {
 //        // Add the elements to set
 //       for(User t:list)
 //       {
-//           if(!set.add(t)){
+//           if(!set.`String manipulations`.add(t)){
 //               System.out.println("iterate== > "+t.getName() +"-" + t.getAge());
-//             //  set.add(t);
-//              // duplicateList.add(t);
+//             //  set.`String manipulations`.add(t);
+//              // duplicateList.`String manipulations`.add(t);
 //           }
 //
 ////           List<Integer> newList = list.stream()
@@ -45,7 +45,7 @@ public class findDuplicateOccurance {
 ////                   .collect(Collectors.toList());
 //
 ////           else
-////               set.add(t);
+////               set.`String manipulations`.add(t);
 //
 //       }
 //        userList.clear();
