@@ -124,9 +124,9 @@ fun main() {
 
     val personRun  : PersonImpl? = PersonImpl()
     val bio = personRun?.run {
-        println(name.reversed()) // throws null pointer exception
-        println(name.capitalize())
-        println(name.length)
+        println(name!!.reversed()) // throws null pointer exception
+        println(name!!.capitalize())
+        println(name!!.length)
     }
     println(bio)
 }
