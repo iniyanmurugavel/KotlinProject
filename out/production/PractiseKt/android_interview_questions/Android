@@ -1,0 +1,15 @@
+what is android sdk
+A software  development kit (sdk or devkit) typically a set of software development tools to allow the creation of application for a certain software
+package
+
+Object vs Singleton in kotlin
+
+The singleton pattern restricts the instantiation of a class to a single object. It is useful in cases wherein you only need a single object to contain a global state.
+To create a singleton, one has to make sure that
+Only one instance can exist
+It has global access
+This is generally achieved by
+Declaring all constructors private
+Access is through static methods that ensures a single instance
+An object in Kotlin (among its many purposes) is both a class definition and an instantiation of single instance combined. It is a first class language support for singletons.
+
