@@ -1,10 +1,11 @@
 package kt.scope_functions
 
 /**
- * NOTE : - with : If you want to operate on non-null object
+ * NOTE :
+ * with : If you want to operate on non-null object
  * let - if you want to just execute lambda expression on nullable object and avoid NullPointerException
- * run - if you want to operate on nullable object , execute lambda expression and avoid NullPointerException
- * apply -  if you want to initialize or configure an object
+ * run - if you want to operate on nullable object , execute lambda expression and avoid NullPointerException (combination of with and let)
+ * apply - if you want to initialize or configure an object
  * also - you can use also function if you want to do some additional object configuration
  *
  * apply,also will not return anything
@@ -129,4 +130,16 @@ fun main() {
         println(name!!.length)
     }
     println(bio)
+
+    val numberList : MutableList<Int> = mutableListOf(1,2,3)
+
+    val duplicationNumber = numberList.also {
+        println("The list element are $it ")
+        it.add(4)
+        println("The list element after adding an element  $it ")
+        it.remove(2)
+        println("The list element after removing an element $it")
+    }
+
+    println("duplicationNumber $duplicationNumber")
 }

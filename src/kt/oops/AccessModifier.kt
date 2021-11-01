@@ -1,5 +1,8 @@
 package kt.oops
 
+/**
+ * Internal is useful for moudle level access
+ */
 fun main(args :Array<String>){
     /**
      * Access Modifier determine whether other classes can be use particular field or invoke  a particular method

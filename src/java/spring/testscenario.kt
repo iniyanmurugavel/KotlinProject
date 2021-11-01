@@ -1,6 +1,5 @@
 import java.nio.charset.Charset
 import java.util.*
-import javax.xml.bind.DatatypeConverter.printString
 
 val prods = arrayOf(
         arrayOf(
@@ -34,7 +33,7 @@ fun main (args : Array<String>) {
     println("final encrypted data "+ fetchEncryptedData(prods,0))
 
 
-    val testBoolean : Boolean = false
+    val testBoolean = false
     println(testBoolean)
     printStringData(testBoolean.toString())
     val dataretrieve = true.toString()

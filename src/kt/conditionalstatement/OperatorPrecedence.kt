@@ -1,4 +1,4 @@
-package kt.conditional_statements
+package kt.conditionalstatement
 
 fun main (args: Array<String>){
 

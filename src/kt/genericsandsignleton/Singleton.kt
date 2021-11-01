@@ -1,4 +1,4 @@
-package kt.generics_and_singleton
+package kt.genericsandsignleton
 
 fun main(args:Array<String>){
     /**

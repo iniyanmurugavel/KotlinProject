@@ -1,11 +1,19 @@
-package kt.generics_and_singleton
+package kt.genericsandsignleton
 
 /**
  * Generics is a powerful feature that you can use to define classess or functions that can work with different data types
  * T - Typed Parameter is not defined
  * A same class work with any datatype
  * Generic support for class and functions
+ *
+ *
+ * List list = new ArrayList();
+ * list.add("FirstString")
+ * list.add(6) before java 5 no generic here we are restricting compiler to identify only to accept proper generic type
+ * need to explicit cast, throws exception String str = (String) list.get(1) if you use generics not required any explicit type at runtime
  */
+
+
 
 
 // To fix this problems to use Types in Generics  to use all datatype

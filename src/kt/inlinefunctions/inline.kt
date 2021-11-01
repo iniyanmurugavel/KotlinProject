@@ -14,9 +14,28 @@ package kt.inlinefunctions
  * Inline functions not allowed to keep a reference to the functions passed as a paramter or pass it or a different function
  * you will get the compiler error saying illegal usage of inline parameter
  */
+
+/**
+ * add the inline keyword to improve the higher order function's performance.
+ */
 fun main() {
     Preference(true)
 }
+
+inline fun higherOrderFunction(aLambda: () -> Unit) {
+
+//    doSomething()
+//    aLamda()
+//    doAnotherThing()
+
+}
+
+fun callingFunction() {
+
+    higherOrderFunction{ print("lambda logic") }
+
+}
+
 
 fun sub(a : Int.()-> Unit) {
     a(10)
@@ -48,7 +67,7 @@ fun myFunction(importantActions : Int.() -> Unit) {
  * argument or another function use that no inline keyword
  */
 
-
+// noinline ingore that particular line
 // Inline functions not allowed to keep a reference to the functions passed as a paramter or pass it or a different function
 inline fun Preference(commit : Boolean,
                       noinline _sub: Int.() -> Unit = {},
