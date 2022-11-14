@@ -14,6 +14,16 @@ import java.math.BigInteger
  */
 fun main(args: Array<String>) {
     println(getFibonacciNumber(10000, BigInteger("1"), BigInteger("0")))
+
+    val first: Boolean = true
+    val second: Boolean = false
+    val third: Boolean = false
+
+    val result = first || second || third
+    println("result => $result")
+
+    val status = isNewApplyCouponExperimentEnabled(listOf( "all"), listOf( "all"))
+    print("status $status")
 }
 
 tailrec fun getFibonacciNumber(n: Int, a: BigInteger, b: BigInteger): BigInteger {
@@ -22,4 +32,34 @@ tailrec fun getFibonacciNumber(n: Int, a: BigInteger, b: BigInteger): BigInteger
     } else {
         return getFibonacciNumber(n - 1, a + b, a)
     }
+
+
 }
+
+fun isNewApplyCouponExperimentEnabled(city : List<String>, userid: List<String>): Boolean {
+
+        if (included1(
+                city,
+                "sfsfs"
+            ) && included(
+                userid,
+               "sssf"
+            )
+        ) {
+            return true
+        }
+    return false
+}
+fun included(userIdLastDigitList: List<String>?, currentUserIdLastDigit: String): Boolean {
+    return userIdLastDigitList?.firstOrNull {
+        it.equals("all", true) || currentUserIdLastDigit.endsWith(it)
+    }.isNullOrEmpty().not()
+}
+
+fun included1(cities: List<String>?, currentCity: String?): Boolean {
+    val cityName = cities?.firstOrNull {
+        it.equals(currentCity, true) || it.equals("all", true)
+    }
+    return cityName != null
+}
+

@@ -36,6 +36,11 @@ package kt.scope_functions
 
 
 
+
+//let prevelent also - return it
+//apply prevelent run - returns this
+//with - this same as run
+
 class Person1 {
     var name : String = ""
     var age : Int = 0
