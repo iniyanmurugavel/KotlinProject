@@ -147,17 +147,4 @@ repeatFun.cancel()
 —————————————————
 wget  https://dl.google.com/android/repository/platform-tools-latest-darwin.zip
 
-Wireless Ads connect
-———————————————————
-./adb pair 192.168.94.132:44443
-./adb connect 192.168.94.132:44443
-
-adb shell 'am start -d "rapidoRider://captain_levels/rewards?captain_level=1"'
-
-## Git Flow
-
-http://datasift.github.io/gitflow/IntroducingGitFlow.html
-https://docs.google.com/spreadsheets/d/1PQrLYhBevuf5i4Kte1PhLNEb7zHiV2cgzTDkthoEs9s/edit?ts=606bf257#gid=0
-https://dinesh-hema99.medium.com/how-to-debug-an-anr-with-traces-file-160fbb737f39
-
 
